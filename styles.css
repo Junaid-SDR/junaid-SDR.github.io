@@ -251,7 +251,10 @@ body {
     right: 20px;
     bottom: 20px;
     border-radius: 50%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="40" r="15" fill="%23ffffff" opacity="0.8"/><path d="M30 70 Q50 50 70 70" stroke="%23ffffff" stroke-width="3" fill="none" opacity="0.8"/></svg>') center/cover;
+    background: url('profile-picture-1.jpeg') center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @keyframes pulse {
