@@ -1,113 +1,205 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Junaid - Sales Development Representative</title>
+    <title>Muhammad Junaid — Business Development Representative</title>
+    <meta name="description" content="Muhammad Junaid — BDR at NeoSOFT with 9+ years of experience in B2B sales, lead generation, and client acquisition across IT, construction, and FMCG.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Muhammad Junaid</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">
+                <span class="brand-initials">MJ</span>
+                <span class="brand-name">Muhammad Junaid</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"       class="nav-link active">Home</a></li>
+                <li><a href="#about"      class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#skills"     class="nav-link">Skills</a></li>
+                <li><a href="#education"  class="nav-link">Education</a></li>
+                <li><a href="#contact"    class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="mailto:muhjunaid90@gmail.com" class="nav-hire-btn">
+                <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name">Muhammad Junaid</span>
-                        <span class="title">Sales Development Representative</span>
-                    </h1>
-                    <p class="hero-description">
-                        Driving revenue growth with 9+ years of experience in B2B sales, 
-                        lead generation, and client acquisition in the IT industry.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
+        <div class="hero-bg-shapes">
+            <div class="shape s1"></div>
+            <div class="shape s2"></div>
+            <div class="shape s3"></div>
+            <div class="shape s4"></div>
+        </div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-wrapper">
+            <div class="hero-text">
+                <div class="hero-available-badge">
+                    <span class="pulse-dot"></span>
+                    Available for Opportunities
+                </div>
+                <h1 class="hero-heading">
+                    <span class="hi-text">Hello, I am</span>
+                    <span class="hero-name">Muhammad<br>Junaid</span>
+                </h1>
+                <div class="hero-role-wrap">
+                    <span class="hero-role-line"></span>
+                    <span class="hero-role">Business Development Representative</span>
+                </div>
+                <p class="hero-tagline">
+                    Driving revenue growth through strategic B2B outreach, hyper-personalized campaigns,
+                    and data-driven lead generation with <strong>9+ years</strong> of proven success across
+                    IT, construction, and FMCG industries.
+                </p>
+                <div class="hero-kpis">
+                    <div class="kpi">
+                        <span class="kpi-num" data-target="9">0</span><span class="kpi-sym">+</span>
+                        <span class="kpi-lbl">Years Experience</span>
+                    </div>
+                    <div class="kpi-sep"></div>
+                    <div class="kpi">
+                        <span class="kpi-num" data-target="500">0</span><span class="kpi-sym">+</span>
+                        <span class="kpi-lbl">Leads Generated</span>
+                    </div>
+                    <div class="kpi-sep"></div>
+                    <div class="kpi">
+                        <span class="kpi-num" data-target="3">0</span>
+                        <span class="kpi-lbl">Countries Worked</span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <div class="profile-image"></div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                        </div>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-comments"></i> Let us Talk
+                    </a>
+                    <a href="#experience" class="btn-ghost">
+                        View Experience <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:muhjunaid90@gmail.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/923214343365" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:+923214343365" class="social-btn" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo-side">
+                <div class="photo-orbit">
+                    <div class="orbit-ring ring-outer"></div>
+                    <div class="orbit-ring ring-inner"></div>
+                    <div class="photo-circle">
+                        <img src="profile-picture-1.jpeg" alt="Muhammad Junaid" class="profile-img">
+                    </div>
+                    <div class="orbit-badge badge-top">
+                        <i class="fas fa-building"></i>
+                        <span>NeoSOFT</span>
+                    </div>
+                    <div class="orbit-badge badge-bottom">
+                        <i class="fas fa-trophy"></i>
+                        <span>9+ Yrs Exp.</span>
+                    </div>
+                    <div class="orbit-badge badge-left">
+                        <i class="fas fa-chart-line"></i>
+                        <span>B2B Sales</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+        <div class="scroll-cue">
+            <span>Scroll</span>
+            <div class="scroll-track"><div class="scroll-thumb"></div></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- ABOUT -->
+    <section id="about" class="about section-spacing bg-white">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Myself</h2>
-                <p class="section-subtitle">Professional Overview</p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-eyebrow">About Me</span>
+                <h2 class="section-title">Turning Prospects into<br><span class="accent-text">Revenue-Generating Clients</span></h2>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        As a Sales Development Representative at NeoSOFT, a leading IT service provider, 
-                        I bring 9 years of experience driving revenue growth, including 3 years as a 
-                        Business Development Representative (BDR) within the IT industry. I have a 
-                        proven track record of utilizing platforms like Upwork, LinkedIn Sales Navigator, 
-                        and Indeed alongside advanced email automation tools (Apollo, Instantly, Sender.net) 
-                        to boost lead generation and client acquisition.
+            <div class="about-layout">
+                <div class="about-text-col animate-on-scroll">
+                    <p class="about-para">
+                        As a <strong>Business Development Representative at NeoSOFT</strong>, a leading IT service provider,
+                        I bring 9 years of progressive experience driving revenue growth, including 3+ years dedicated to BDR
+                        roles within the IT sector. I leverage platforms like Upwork, LinkedIn Sales Navigator, and Indeed
+                        alongside advanced email automation tools (Apollo, Instantly, Sender.net) to maximize lead generation
+                        and client acquisition.
                     </p>
-                    <p class="about-description">
-                        My expertise in data scraping helps me build high-quality, targeted pipelines, 
-                        and I use Salesforce to optimize lead management and streamline the sales process. 
-                        My data-driven approach consistently surpasses revenue goals while ensuring 
-                        exceptional value for clients.
+                    <p class="about-para">
+                        My expertise in data scraping enables me to build high-quality, targeted pipelines while Salesforce
+                        CRM keeps lead management optimized and the sales process streamlined. My data-driven approach
+                        consistently surpasses revenue goals while delivering exceptional value to every client.
                     </p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">9+</span>
-                            <span class="stat-label">Years Experience</span>
+                    <ul class="about-highlights">
+                        <li><i class="fas fa-circle-check"></i> Expert in B2B Sales, Lead Generation and Pipeline Management</li>
+                        <li><i class="fas fa-circle-check"></i> Multi-industry background: IT, Construction and FMCG</li>
+                        <li><i class="fas fa-circle-check"></i> Proficient in CRM, sales automation and outbound tools</li>
+                        <li><i class="fas fa-circle-check"></i> International experience across UAE, US and Pakistan</li>
+                        <li><i class="fas fa-circle-check"></i> MBA graduate with strong analytical capabilities</li>
+                    </ul>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" rel="noopener" class="btn-outline">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="about-stats-col animate-on-scroll">
+                    <div class="stat-cards-grid">
+                        <div class="stat-card stat-blue">
+                            <div class="stat-card-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="stat-card-content">
+                                <span class="stat-card-num" data-target="9">0</span>
+                                <span class="stat-card-plus">+</span>
+                                <span class="stat-card-label">Years Experience</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Leads Generated</span>
+                        <div class="stat-card stat-gold">
+                            <div class="stat-card-icon"><i class="fas fa-users"></i></div>
+                            <div class="stat-card-content">
+                                <span class="stat-card-num" data-target="500">0</span>
+                                <span class="stat-card-plus">+</span>
+                                <span class="stat-card-label">Leads Generated</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">Client Satisfaction</span>
+                        <div class="stat-card stat-dark">
+                            <div class="stat-card-icon"><i class="fas fa-globe"></i></div>
+                            <div class="stat-card-content">
+                                <span class="stat-card-num" data-target="3">0</span>
+                                <span class="stat-card-label">Countries Worked</span>
+                            </div>
+                        </div>
+                        <div class="stat-card stat-purple">
+                            <div class="stat-card-icon"><i class="fas fa-star"></i></div>
+                            <div class="stat-card-content">
+                                <span class="stat-card-num" data-target="5">0</span>
+                                <span class="stat-card-label">Companies Served</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,198 +207,343 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section-spacing bg-dark">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">Professional Journey</p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-eyebrow eyebrow-light">Career Journey</span>
+                <h2 class="section-title title-light">Professional <span class="accent-gold">Experience</span></h2>
             </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Business Development Representative</h3>
-                            <span class="company">NEOSOFT – REMOTE, UNITED STATES</span>
-                            <span class="duration">03/11/2024 – CURRENT</span>
+
+                <div class="tl-item animate-on-scroll">
+                    <div class="tl-aside">
+                        <div class="tl-dot tl-dot-active"><i class="fas fa-circle-dot"></i></div>
+                        <div class="tl-connector"></div>
+                    </div>
+                    <div class="tl-card tl-card-current">
+                        <div class="tl-card-top">
+                            <div class="tl-title-block">
+                                <span class="tl-current-label">Current Role</span>
+                                <h3 class="tl-role">Business Development Representative</h3>
+                                <div class="tl-meta-row">
+                                    <span class="tl-co"><i class="fas fa-building"></i> NeoSOFT</span>
+                                    <span class="tl-loc"><i class="fas fa-location-dot"></i> Remote, United States</span>
+                                    <span class="tl-date"><i class="far fa-calendar"></i> Nov 2024 &ndash; Present</span>
+                                </div>
+                            </div>
+                            <div class="tl-industry-tag tl-it">IT Services</div>
                         </div>
-                        <ul class="job-responsibilities">
+                        <ul class="tl-list">
                             <li>Handling and developing Marketing Qualified Leads (MQLs) to create sales opportunities</li>
                             <li>Implementing targeted email campaigns to convert MQLs into pre-discovery calls</li>
-                            <li>Setting up and managing Apollo sequences to handle Marketing Qualified Leads (MQLs)</li>
-                            <li>Scheduling meetings and keeping the client and our team informed about the meeting details</li>
+                            <li>Setting up and managing Apollo sequences to handle and nurture Marketing Qualified Leads</li>
+                            <li>Scheduling meetings and keeping both client and internal teams informed of all meeting details</li>
                             <li>Conducting strategic cold calling to identify and engage potential clients</li>
-                            <li>Using LinkedIn to find and connect with potential customers to create sales opportunities</li>
-                            <li>Creating Hyper-personalized email campaigns to improve chances of turning leads into sales</li>
-                            <li>Managing email and call campaigns through Apollo to reach and engage leads effectively</li>
+                            <li>Using LinkedIn to find and connect with potential customers to create new sales opportunities</li>
+                            <li>Creating hyper-personalized email campaigns to improve lead-to-sales conversion rates</li>
+                            <li>Managing email and call campaigns through Apollo to effectively reach and engage leads</li>
                         </ul>
+                        <div class="tl-pill-row">
+                            <span class="tl-pill">Apollo.io</span>
+                            <span class="tl-pill">LinkedIn Sales Navigator</span>
+                            <span class="tl-pill">Email Automation</span>
+                            <span class="tl-pill">Cold Calling</span>
+                            <span class="tl-pill">MQL Management</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Sales Development Representative</h3>
-                            <span class="company">KODEX TECHNOLOGIES – LAHORE, PAKISTAN</span>
-                            <span class="duration">05/02/2022 - 01/11/2024</span>
+                <div class="tl-item animate-on-scroll">
+                    <div class="tl-aside">
+                        <div class="tl-dot"><i class="fas fa-circle-dot"></i></div>
+                        <div class="tl-connector"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-card-top">
+                            <div class="tl-title-block">
+                                <h3 class="tl-role">Sales Development Representative</h3>
+                                <div class="tl-meta-row">
+                                    <span class="tl-co"><i class="fas fa-building"></i> Kodex Technologies</span>
+                                    <span class="tl-loc"><i class="fas fa-location-dot"></i> Lahore, Pakistan</span>
+                                    <span class="tl-date"><i class="far fa-calendar"></i> Feb 2022 &ndash; Nov 2024</span>
+                                </div>
+                            </div>
+                            <div class="tl-industry-tag tl-it">IT Solutions</div>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Proven Upwork bidder with expertise in IT solutions, adept at crafting effective proposals to drive client engagement and project success</li>
-                            <li>Skilled in utilizing Apollo, Instantly, and Sender.net for mass emailing, cold calling, and data scraping, facilitating effective client outreach and engagement through strategic, data-driven approaches</li>
-                            <li>Experienced in utilizing Salesforce for project management, lead tracking, and sales pipeline optimization</li>
-                            <li>Leveraged the company's LinkedIn profile, Indeed, and other social platforms to identify and secure project opportunities</li>
-                            <li>Developing industry-specific templates for mass emailing tailored to address various sectors' unique needs and challenges</li>
-                            <li>Proficient in client communication through Slack, Trello, and Skype, ensuring seamless collaboration and project alignment</li>
+                        <ul class="tl-list">
+                            <li>Proven Upwork bidder with expertise in IT solutions, crafting effective proposals to drive client engagement</li>
+                            <li>Skilled in utilizing Apollo, Instantly, and Sender.net for mass emailing, cold calling, and data scraping</li>
+                            <li>Experienced in using Salesforce for project management, lead tracking, and sales pipeline optimization</li>
+                            <li>Leveraged company LinkedIn, Indeed, and social platforms to identify and secure project opportunities</li>
+                            <li>Developed industry-specific email templates tailored to various sectors unique needs and challenges</li>
+                            <li>Managed client communication through Slack, Trello, and Skype ensuring seamless collaboration</li>
                         </ul>
+                        <div class="tl-pill-row">
+                            <span class="tl-pill">Upwork</span>
+                            <span class="tl-pill">Salesforce CRM</span>
+                            <span class="tl-pill">Apollo</span>
+                            <span class="tl-pill">Instantly</span>
+                            <span class="tl-pill">Sender.net</span>
+                            <span class="tl-pill">Data Scraping</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Senior Sales Executive</h3>
-                            <span class="company">RED SEA INTERNATIONAL FZCO – DUBAI, UAE</span>
-                            <span class="duration">17/07/2020 - 27/10/2021</span>
+                <div class="tl-item animate-on-scroll">
+                    <div class="tl-aside">
+                        <div class="tl-dot"><i class="fas fa-circle-dot"></i></div>
+                        <div class="tl-connector"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-card-top">
+                            <div class="tl-title-block">
+                                <h3 class="tl-role">Senior Sales Executive</h3>
+                                <div class="tl-meta-row">
+                                    <span class="tl-co"><i class="fas fa-building"></i> Red Sea International FZCO</span>
+                                    <span class="tl-loc"><i class="fas fa-location-dot"></i> Dubai, UAE</span>
+                                    <span class="tl-date"><i class="far fa-calendar"></i> Jul 2020 &ndash; Oct 2021</span>
+                                </div>
+                            </div>
+                            <div class="tl-industry-tag tl-construction">Construction</div>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Conducted thorough market analysis to identify potential clients, emerging trends, and business opportunities in the modular building construction industry</li>
-                            <li>Developed and implemented strategic sales plans to drive business growth, successfully achieving and exceeding revenue targets for modular construction projects</li>
-                            <li>Prepared and delivered customized proposals, presentations, and bids that highlighted the cost efficiency, sustainability, and speed of modular construction compared to traditional methods</li>
-                            <li>Negotiated project terms, contracts, and pricing with clients and partners, ensuring mutually beneficial agreements while aligning with company objectives</li>
-                            <li>Worked closely with design, engineering, and project management teams to ensure alignment between client needs and project execution, resulting in timely and successful project delivery</li>
+                        <ul class="tl-list">
+                            <li>Conducted thorough market analysis to identify potential clients and opportunities in modular building construction</li>
+                            <li>Developed and implemented strategic sales plans to drive business growth, achieving and exceeding revenue targets</li>
+                            <li>Prepared and delivered customized proposals highlighting the cost efficiency and speed of modular construction</li>
+                            <li>Negotiated project terms, contracts, and pricing with clients and partners for mutually beneficial agreements</li>
+                            <li>Collaborated with design, engineering, and PM teams ensuring alignment between client needs and execution</li>
                         </ul>
+                        <div class="tl-pill-row">
+                            <span class="tl-pill">B2B Sales</span>
+                            <span class="tl-pill">Market Analysis</span>
+                            <span class="tl-pill">Proposal Writing</span>
+                            <span class="tl-pill">Contract Negotiation</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Sales Executive</h3>
-                            <span class="company">DUCON INDUSTRIES FZCO – DUBAI, UAE</span>
-                            <span class="duration">17/04/2016 - 15/06/2020</span>
+                <div class="tl-item animate-on-scroll">
+                    <div class="tl-aside">
+                        <div class="tl-dot"><i class="fas fa-circle-dot"></i></div>
+                        <div class="tl-connector"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-card-top">
+                            <div class="tl-title-block">
+                                <h3 class="tl-role">Sales Executive</h3>
+                                <div class="tl-meta-row">
+                                    <span class="tl-co"><i class="fas fa-building"></i> Ducon Industries FZCO</span>
+                                    <span class="tl-loc"><i class="fas fa-location-dot"></i> Dubai, UAE</span>
+                                    <span class="tl-date"><i class="far fa-calendar"></i> Apr 2016 &ndash; Jun 2020</span>
+                                </div>
+                            </div>
+                            <div class="tl-industry-tag tl-construction">Construction</div>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Identified, engaged, and developed strong relationships with contractors, construction companies, developers, and architects to drive sales of concrete blocks and interlocks</li>
-                            <li>Successfully met and exceeded sales targets by promoting high-quality concrete blocks and interlocking products across designated regions</li>
-                            <li>Conducted market research to identify potential clients and business opportunities, generating new leads and growing the customer base in the construction sector</li>
-                            <li>Negotiated pricing, contracts, and terms of sale with clients, ensuring favorable outcomes that align with company objectives while maintaining strong customer satisfaction</li>
-                            <li>Managed the end-to-end sales process, from receiving orders, and coordinating with production and logistics teams, to ensuring timely delivery to clients</li>
+                        <ul class="tl-list">
+                            <li>Identified and developed strong relationships with contractors, developers, and architects to drive sales</li>
+                            <li>Successfully met and exceeded sales targets promoting high-quality concrete blocks and interlocking products</li>
+                            <li>Conducted market research to identify potential clients and grow the customer base in the construction sector</li>
+                            <li>Negotiated pricing, contracts, and terms ensuring favorable outcomes aligned with company objectives</li>
+                            <li>Managed end-to-end sales process from order receipt to coordinating production and logistics for timely delivery</li>
                         </ul>
+                        <div class="tl-pill-row">
+                            <span class="tl-pill">Construction Sales</span>
+                            <span class="tl-pill">Client Relations</span>
+                            <span class="tl-pill">Market Research</span>
+                            <span class="tl-pill">Contract Management</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Sales Representative</h3>
-                            <span class="company">PEPSICO INTERNATIONAL (PVT.) LIMITED – LAHORE, PAKISTAN</span>
-                            <span class="duration">22/09/2014 - 30/11/2015</span>
+                <div class="tl-item animate-on-scroll">
+                    <div class="tl-aside">
+                        <div class="tl-dot"><i class="fas fa-circle-dot"></i></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-card-top">
+                            <div class="tl-title-block">
+                                <h3 class="tl-role">Sales Representative</h3>
+                                <div class="tl-meta-row">
+                                    <span class="tl-co"><i class="fas fa-building"></i> PepsiCo International (Pvt.) Ltd.</span>
+                                    <span class="tl-loc"><i class="fas fa-location-dot"></i> Lahore, Pakistan</span>
+                                    <span class="tl-date"><i class="far fa-calendar"></i> Sep 2014 &ndash; Nov 2015</span>
+                                </div>
+                            </div>
+                            <div class="tl-industry-tag tl-fmcg">FMCG</div>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Built and maintained strong relationships with key clients, consistently meeting and exceeding sales targets by promoting FMCG products and identifying new business opportunities</li>
-                            <li>Conducted market research to stay updated on consumer trends and actively promoted products through store visits and presentations, increasing brand visibility and market share</li>
-                            <li>Managed the entire sales cycle, from order placement to timely delivery, and collaborated with retailers, distributors, and internal teams for optimal product placement and smooth operations</li>
-                            <li>Negotiated contracts, analyzed customer feedback, and prepared detailed sales reports to track performance, identify improvements, and drive continuous growth</li>
+                        <ul class="tl-list">
+                            <li>Built and maintained strong client relationships, consistently meeting and exceeding sales targets</li>
+                            <li>Conducted market research to stay updated on consumer trends, increasing brand visibility and market share</li>
+                            <li>Managed the entire sales cycle from order placement to delivery, collaborating with retailers and distributors</li>
+                            <li>Negotiated contracts, analyzed customer feedback, and prepared detailed sales reports to drive continuous growth</li>
                         </ul>
+                        <div class="tl-pill-row">
+                            <span class="tl-pill">FMCG Sales</span>
+                            <span class="tl-pill">Retail Management</span>
+                            <span class="tl-pill">Market Research</span>
+                            <span class="tl-pill">Sales Reporting</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- SKILLS -->
+    <section id="skills" class="skills section-spacing bg-white">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Core Skills & Attributes</h2>
-                <p class="section-subtitle">Professional Expertise</p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-eyebrow">Expertise</span>
+                <h2 class="section-title">Skills &amp; <span class="accent-text">Competencies</span></h2>
             </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Sales & Business Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">B2B Sales Expert</span>
-                        <span class="skill-item">Lead Generation & Prospecting</span>
-                        <span class="skill-item">Client Relationship Management</span>
-                        <span class="skill-item">Cold Calling</span>
-                        <span class="skill-item">Market Research & Analysis</span>
-                        <span class="skill-item">Sales Reporting & Analysis</span>
+                <div class="skill-block animate-on-scroll">
+                    <div class="skill-block-header sb-blue">
+                        <div class="sb-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Sales &amp; Business Development</h3>
+                    </div>
+                    <div class="skill-tag-cloud">
+                        <span class="s-tag">B2B Sales</span>
+                        <span class="s-tag">Lead Generation</span>
+                        <span class="s-tag">Prospecting</span>
+                        <span class="s-tag">Cold Calling</span>
+                        <span class="s-tag">Pipeline Management</span>
+                        <span class="s-tag">Client Acquisition</span>
+                        <span class="s-tag">MQL Development</span>
+                        <span class="s-tag">Market Research</span>
+                        <span class="s-tag">Revenue Growth</span>
+                        <span class="s-tag">Contract Negotiation</span>
+                        <span class="s-tag">Sales Reporting</span>
+                        <span class="s-tag">Account Management</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Digital Tools & Platforms</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">LinkedIn Sales Navigator</span>
-                        <span class="skill-item">CRM Software Proficiency</span>
-                        <span class="skill-item">Apollo</span>
-                        <span class="skill-item">Instantly</span>
-                        <span class="skill-item">Sender.net</span>
-                        <span class="skill-item">Salesforce</span>
+                <div class="skill-block animate-on-scroll">
+                    <div class="skill-block-header sb-purple">
+                        <div class="sb-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Digital Tools &amp; Platforms</h3>
+                    </div>
+                    <div class="skill-tag-cloud">
+                        <span class="s-tag s-purple">LinkedIn Sales Navigator</span>
+                        <span class="s-tag s-purple">Apollo.io</span>
+                        <span class="s-tag s-purple">Salesforce CRM</span>
+                        <span class="s-tag s-purple">Instantly</span>
+                        <span class="s-tag s-purple">Sender.net</span>
+                        <span class="s-tag s-purple">Upwork</span>
+                        <span class="s-tag s-purple">Slack</span>
+                        <span class="s-tag s-purple">Trello</span>
+                        <span class="s-tag s-purple">Skype</span>
+                        <span class="s-tag s-purple">HubSpot</span>
+                        <span class="s-tag s-purple">MS Office</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Communication & Marketing</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Upwork Proposal Writing</span>
-                        <span class="skill-item">Email Marketing</span>
-                        <span class="skill-item">Effective Communication</span>
-                        <span class="skill-item">Strong verbal & writing skills</span>
-                        <span class="skill-item">Data Scraping</span>
-                        <span class="skill-item">Project Management</span>
+                <div class="skill-block animate-on-scroll">
+                    <div class="skill-block-header sb-gold">
+                        <div class="sb-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Marketing &amp; Outreach</h3>
+                    </div>
+                    <div class="skill-tag-cloud">
+                        <span class="s-tag s-gold">Email Marketing</span>
+                        <span class="s-tag s-gold">Hyper-Personalization</span>
+                        <span class="s-tag s-gold">Proposal Writing</span>
+                        <span class="s-tag s-gold">Data Scraping</span>
+                        <span class="s-tag s-gold">Campaign Management</span>
+                        <span class="s-tag s-gold">CRM Management</span>
+                        <span class="s-tag s-gold">Content Outreach</span>
+                        <span class="s-tag s-gold">Social Selling</span>
+                        <span class="s-tag s-gold">Brand Positioning</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- EDUCATION -->
+    <section id="education" class="education section-spacing bg-light">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education & Training</h2>
-                <p class="section-subtitle">Academic Background</p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-eyebrow">Background</span>
+                <h2 class="section-title">Education &amp; <span class="accent-text">Languages</span></h2>
             </div>
-            <div class="education-content">
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+            <div class="edu-lang-layout">
+                <div class="edu-column animate-on-scroll">
+                    <h3 class="col-heading"><i class="fas fa-graduation-cap"></i> Academic Qualifications</h3>
+                    <div class="edu-card">
+                        <div class="edu-icon-wrap edu-icon-blue">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-body">
+                            <span class="edu-badge badge-blue">MBA</span>
+                            <h4 class="edu-degree">Master of Business Administration</h4>
+                            <p class="edu-school"><i class="fas fa-location-dot"></i> University of the Punjab, Lahore, Pakistan</p>
+                            <p class="edu-year"><i class="far fa-calendar-alt"></i> 2011 &ndash; 2014</p>
+                        </div>
                     </div>
-                    <div class="education-details">
-                        <h3 class="degree">Master of Business Administration (MBA)</h3>
-                        <p class="institution">University of the Punjab, Lahore, Pakistan</p>
-                        <p class="duration">2011 - 2014</p>
+                    <div class="edu-card">
+                        <div class="edu-icon-wrap edu-icon-gold">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <div class="edu-body">
+                            <span class="edu-badge badge-gold">B.Com</span>
+                            <h4 class="edu-degree">Bachelor of Commerce</h4>
+                            <p class="edu-school"><i class="fas fa-location-dot"></i> Punjab College of Commerce, Lahore, Pakistan</p>
+                            <p class="edu-year"><i class="far fa-calendar-alt"></i> 2008 &ndash; 2010</p>
+                        </div>
                     </div>
                 </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
+                <div class="lang-column animate-on-scroll">
+                    <h3 class="col-heading"><i class="fas fa-language"></i> Language Proficiency</h3>
+                    <div class="lang-card">
+                        <div class="lang-card-header">
+                            <span class="lang-flag">&#127477;&#127472;</span>
+                            <div>
+                                <h4 class="lang-name">Urdu</h4>
+                                <span class="lang-badge lang-native">Native / C2</span>
+                            </div>
+                        </div>
+                        <div class="lang-bars">
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Speaking</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:100%"></div></div>
+                                <span class="lbr-level">C2</span>
+                            </div>
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Writing</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:100%"></div></div>
+                                <span class="lbr-level">C2</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="education-details">
-                        <h3 class="degree">Bachelor's in Commerce</h3>
-                        <p class="institution">Punjab College of Commerce, Lahore, Pakistan</p>
-                        <p class="duration">2008 - 2010</p>
-                    </div>
-                </div>
-            </div>
-            <div class="language-skills">
-                <h3 class="language-title">Language Skills</h3>
-                <div class="language-content">
-                    <div class="language-item">
-                        <span class="language-name">Urdu</span>
-                        <span class="language-level">Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">English</span>
-                        <div class="language-proficiency">
-                            <span class="proficiency-item">Listening: B2</span>
-                            <span class="proficiency-item">Reading: C1</span>
-                            <span class="proficiency-item">Speaking: B2</span>
-                            <span class="proficiency-item">Writing: B2</span>
+                    <div class="lang-card">
+                        <div class="lang-card-header">
+                            <span class="lang-flag">&#127468;&#127463;</span>
+                            <div>
+                                <h4 class="lang-name">English</h4>
+                                <span class="lang-badge lang-b2">B2 &ndash; Upper Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="lang-bars">
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Listening</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:72%"></div></div>
+                                <span class="lbr-level">B2</span>
+                            </div>
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Reading</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:85%"></div></div>
+                                <span class="lbr-level">C1</span>
+                            </div>
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Speaking</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:72%"></div></div>
+                                <span class="lbr-level">B2</span>
+                            </div>
+                            <div class="lang-bar-row">
+                                <span class="lbr-label">Writing</span>
+                                <div class="lbr-track"><div class="lbr-fill" style="width:72%"></div></div>
+                                <span class="lbr-level">B2</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,88 +551,135 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="contact section-spacing bg-dark">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's Connect and Discuss Opportunities</p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-eyebrow eyebrow-light">Contact</span>
+                <h2 class="section-title title-light">Let us <span class="accent-gold">Work Together</span></h2>
+                <p class="section-sub">Ready to drive your sales growth? I am always open to new opportunities and challenges.</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
+            <div class="contact-layout">
+                <div class="contact-cards-col animate-on-scroll">
+                    <a href="mailto:muhjunaid90@gmail.com" class="c-card">
+                        <div class="c-icon" style="background:linear-gradient(135deg,#2563eb,#1d4ed8)">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>muhjunaid90@gmail.com</p>
+                        <div class="c-text">
+                            <span class="c-label">Email</span>
+                            <span class="c-value">muhjunaid90@gmail.com</span>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>(+92) 3214343365</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/muhammad-junaid-994069143/</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
+                        <i class="fas fa-arrow-right c-arrow"></i>
+                    </a>
+                    <a href="https://wa.me/923214343365" target="_blank" rel="noopener" class="c-card">
+                        <div class="c-icon" style="background:linear-gradient(135deg,#22c55e,#16a34a)">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p>+923214343365</p>
+                        <div class="c-text">
+                            <span class="c-label">WhatsApp</span>
+                            <span class="c-value">+92 321 434 3365</span>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-arrow-right c-arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" rel="noopener" class="c-card">
+                        <div class="c-icon" style="background:linear-gradient(135deg,#0ea5e9,#0284c7)">
+                            <i class="fab fa-linkedin-in"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Pakistan</p>
+                        <div class="c-text">
+                            <span class="c-label">LinkedIn</span>
+                            <span class="c-value">muhammad-junaid-994069143</span>
+                        </div>
+                        <i class="fas fa-arrow-right c-arrow"></i>
+                    </a>
+                    <a href="tel:+923214343365" class="c-card">
+                        <div class="c-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="c-text">
+                            <span class="c-label">Phone</span>
+                            <span class="c-value">+92 321 434 3365</span>
+                        </div>
+                        <i class="fas fa-arrow-right c-arrow"></i>
+                    </a>
+                    <div class="c-card c-card-plain">
+                        <div class="c-icon" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                            <i class="fas fa-map-location-dot"></i>
+                        </div>
+                        <div class="c-text">
+                            <span class="c-label">Location</span>
+                            <span class="c-value">Lahore, Pakistan</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-cta">
-                    <h3>Ready to Drive Your Sales Growth?</h3>
-                    <p>I'm always interested in new opportunities and challenges. Let's discuss how I can help your business achieve its sales objectives.</p>
-                    <div class="cta-buttons">
-                        <a href="mailto:muhjunaid90@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            Send Email
-                        </a>
-                        <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-linkedin"></i>
-                            Connect on LinkedIn
-                        </a>
+                <div class="contact-cta-col animate-on-scroll">
+                    <div class="cta-card">
+                        <div class="cta-top-accent"></div>
+                        <div class="cta-icon-wrap">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="cta-heading">Ready to Scale Your Sales?</h3>
+                        <p class="cta-body">
+                            I specialize in generating qualified B2B leads, managing the full outbound sales cycle,
+                            and building long-lasting client relationships that translate into consistent, measurable revenue growth.
+                            Let us discuss how I can make an impact on your team.
+                        </p>
+                        <div class="cta-features">
+                            <div class="cta-feat"><i class="fas fa-check"></i> B2B Lead Generation</div>
+                            <div class="cta-feat"><i class="fas fa-check"></i> Email &amp; Cold Outreach</div>
+                            <div class="cta-feat"><i class="fas fa-check"></i> CRM Pipeline Management</div>
+                            <div class="cta-feat"><i class="fas fa-check"></i> Discovery Call Scheduling</div>
+                        </div>
+                        <div class="cta-actions">
+                            <a href="mailto:muhjunaid90@gmail.com" class="btn-primary">
+                                <i class="fas fa-envelope"></i> Send an Email
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" rel="noopener" class="btn-outline-light">
+                                <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Muhammad Junaid. All rights reserved.</p>
-                <p>Designed with passion for excellence in sales and business development.</p>
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <span class="footer-logo-mark">MJ</span>
+                    <div>
+                        <p class="footer-name-text">Muhammad Junaid</p>
+                        <p class="footer-role-text">Business Development Representative</p>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="footer-social-row">
+                    <a href="https://www.linkedin.com/in/muhammad-junaid-994069143/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:muhjunaid90@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/923214343365" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+923214343365" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Junaid. All rights reserved.</p>
+                <p>Crafted with precision &amp; purpose.</p>
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
